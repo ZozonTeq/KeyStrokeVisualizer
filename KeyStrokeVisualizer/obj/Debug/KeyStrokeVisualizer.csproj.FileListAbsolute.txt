@@ -1,0 +1,11 @@
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\bin\Debug\KeyStrokeVisualizer.exe.config
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\bin\Debug\KeyStrokeVisualizer.exe
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\bin\Debug\KeyStrokeVisualizer.pdb
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.csproj.AssemblyReference.cache
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.csproj.SuggestedBindingRedirects.cache
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.Form1.resources
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.Properties.Resources.resources
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.csproj.GenerateResource.cache
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.csproj.CoreCompileInputs.cache
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.exe
+C:\Users\otto1\source\repos\KeyStrokeVisualizer\KeyStrokeVisualizer\obj\Debug\KeyStrokeVisualizer.pdb
