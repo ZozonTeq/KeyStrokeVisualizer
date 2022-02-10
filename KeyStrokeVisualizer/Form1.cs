@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,13 +16,7 @@ namespace KeyStrokeVisualizer
     {
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern int GetAsyncKeyState(int vKey);
-
-
-
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1()=>InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -39,7 +33,6 @@ namespace KeyStrokeVisualizer
             gp.AddRectangle(new Rectangle(this.Width - radius, radius, radius, this.Height - diameter));
             this.Region = new Region(gp);
             //--------------------------------------
-           
             btn_exit.FlatAppearance.BorderSize = 0;
             this.btn_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             btn_exit.Visible = false;
@@ -60,7 +53,6 @@ namespace KeyStrokeVisualizer
         {
             ricktxt_log.SelectionLength = 0;
             ricktxt_log.SelectionStart = ricktxt_log.TextLength;
-
             ricktxt_log.SelectionColor = Color.White;
             Font baseFont = ricktxt_log.SelectionFont;
             Font fnt = new Font(baseFont.FontFamily,
@@ -69,16 +61,12 @@ namespace KeyStrokeVisualizer
             ricktxt_log.SelectionFont = fnt;
             ricktxt_log.SelectedText = s;
             ricktxt_log.SelectionAlignment = HorizontalAlignment.Center;
-
             label1.Text = s + " " + label1.Text;
-
             baseFont.Dispose();
             fnt.Dispose();
         }
-        string sublog = "";
         public void SetKeyLog(String s)
         {
-
             ricktxt_log.Text = "";
             AddKeyLog(s);
         }
@@ -111,23 +99,15 @@ namespace KeyStrokeVisualizer
                     kk = k.ToString();
                     bool b = false;
                     for(int j = 0;j < blockKs.Length;j++)
-                    {
                         if (k.ToString() == blockKs[j]) b = true;
-                    }
                     if (!b)
                     {
                         if (kk == "LWin"||kk=="RWin")
-                        {
                             kk = "Win";
-                        }
                         else if (kk == "LControlKey"||kk== "RControlKey")
-                        {
                             kk = "Ctrl";
-                        }
                         else if (kk == "LMenu"||kk== "RMenu")
-                        {
                             kk = "Alt";
-                        }
                         r += kk + "+";
                     }
 
@@ -137,7 +117,6 @@ namespace KeyStrokeVisualizer
             {
                 r = r.Substring(0, r.Length - 1);
                 SetKeyLog(r);
-
             }
             if (tickc == 10)
             {
@@ -151,9 +130,7 @@ namespace KeyStrokeVisualizer
         private void Form1_MouseDown(object sender,MouseEventArgs e)
         {
             if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
-            {
                 mousePoint = new Point(e.X, e.Y);
-            }
         }
 
         private void Form1_MouseMove(object sender,
@@ -166,9 +143,6 @@ namespace KeyStrokeVisualizer
             }
         }
 
-        private void ricktxt_log_Enter(object sender, EventArgs e)
-        {
-            label1.Focus();
-        }
+        private void ricktxt_log_Enter(object sender, EventArgs e)=>label1.Focus();
     }
 }
