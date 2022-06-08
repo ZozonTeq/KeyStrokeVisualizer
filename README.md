@@ -1,3 +1,3 @@
 # KeyStrokeVisualizer
-This is a Key Visualizer for windows. 
-Very simple and easy to use!
+This is a Key Visualizer Softwere for Windows. 
+Simple and easy to use!
